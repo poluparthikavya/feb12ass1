@@ -1,0 +1,30 @@
+dalc=200
+tpowderc=30
+oilc=80
+ricec=500
+saltc=20
+cname=input('enter customer name')
+cphno=int(input('enter customer phno'))
+dalq=int(input('enter no of dal packets'))
+tpowderq=int(input('enter no of tpowder packets'))
+oilq=int(input('enter no of oil packets'))
+riceq=int(input('enter no of rice packets'))
+saltq=int(input('enter no of salt packets'))
+bill=(dalq*dalc)+(tpowdwrq*tpowderc)+(oilq*oilc)+(riceq*ricec)
+(saltq*saltc)
+If bill>5000:
+   dis=bill*10/100
+   tax=bill*18/100
+elif bill>3000:
+     dis=bill*8/100
+      tax=bill*18/100
+elif bill>2000:
+     dis=bill*5/100
+     tax=0
+elif bill>1000:
+     dis=bill*3/100
+     tax=0
+else:
+     print('invalid')
+     mainbill=bill-dis+tax
+print('bill amount:',mainbill)
